@@ -22,6 +22,10 @@ namespace TooManyEmotesAdditionalEmotes
             LoadAudioAssets(assetBundle);
             EmotesManager.BuildEmotesList();
 
+            AdditionalEmoteData.SetAdditionalEmoteData();
+            AdditionalEmoteData.SetAdditionalPropData();
+            AdditionalEmoteData.SetAdditionalMusicData();
+            
             Plugin.Logger.LogInfo("Loaded emotes!");
         }
 
